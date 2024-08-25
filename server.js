@@ -16,7 +16,7 @@ app.use(express.json());
 const MODEL_NAME = "gemini-pro";
 // AIzaSyD4DOjY37_Z7mD0cd-5sVjf_qCrW41-lDA
 
-const genAI = new GoogleGenerativeAI("AIzaSyD4DOjY37_Z7mD0cd-5sVjf_qCrW41-lDA");
+const genAI = new GoogleGenerativeAI("Gemini API KEY");
 
 const model = genAI.getGenerativeModel({
     // model: "gemini-1.0-pro",
@@ -221,8 +221,8 @@ app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
 
-const CLIENT_ID = "938622075401-50r0p8ack2re3sda2kj6njghh6bp034e.apps.googleusercontent.com"
-const CLIENT_SECRET = "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";
+const CLIENT_ID = "USER_ID"
+const CLIENT_SECRET = "USER_SECRETE_ID";
 const REDIRECT_URI = "http://localhost";
 
 const oauth2Client = new google.auth.OAuth2(
